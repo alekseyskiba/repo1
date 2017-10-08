@@ -10,10 +10,4 @@ services:
   redis:
     image: "redis:alpine"
     volumes:
-       - redisvol:/data    
-    logging:
-      driver: "awslogs"
-      options:
-         awslogs-region: "us-east-1"
-         awslogs-group: "test"
-         awslogs-stream: "flaskapp"
+       - redisvol:/data
